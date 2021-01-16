@@ -105,7 +105,7 @@ ul.c-dropdown__list {
 
 @media only screen and (min-width: 924px) {
     .c-body {
-        padding-top: 0px;
+        padding-top: 50px;
         font-size: 14px;
     }
     .c-hero__container {
@@ -134,12 +134,14 @@ ul.c-dropdown__list {
         z-index: 1;
     }
     .c-hero__desktop-box {
+        display: block;
         position: relative;
         top: -338px;
         left: -130px;
         z-index: 2;
     }
     .c-hero__desktop-bg {
+        display: block;
         width: 850px;
         position: absolute;
         top: -257px;
