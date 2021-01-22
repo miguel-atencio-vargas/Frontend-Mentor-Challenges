@@ -12,6 +12,10 @@
     background-color: var(--light-grayish-blue);
 }
 
+span{
+    cursor: pointer;
+}
+
 .c-article {
     border-radius: 8px;
     background-color: #fff;
