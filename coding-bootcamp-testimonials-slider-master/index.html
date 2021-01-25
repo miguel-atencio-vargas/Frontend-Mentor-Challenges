@@ -2,37 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./main.css">
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="c-body">
+  <article class="c-carousel">
+    <div class="c-carousel__container">
+      
+      <div class="c-carousel-item">
+        <div class="c-carousel-item__container">
+            
+          <div class="c-slider" data-position=0> 
+            <img class="c-slider__img" src="./images/image-tanya.jpg" alt="Tanya Picture"> 
+            <img class="c-slider__img-2 o-hidde" src="./images/image-john.jpg" alt="Jhon Picture">
+          </div>
 
-  “ I’ve been interested in coding for a while but never taken the jump, until now. 
-  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-  excited about the future. ”
+          <img class="c-carousel__pattern-img"src="./images/pattern-bg.svg" alt="">
 
-  Tanya Sinclair
-  UX Engineer
+          <div class="c-buttons">
+            <button class="c-buttons__btn c-buttons__btn-previus" onclick="previusSlideEvent()">
+              <img src="./images/icon-prev.svg" alt="Previus Button">
+            </button>
+            
+            <button class="c-buttons__btn c-buttons__btn-next" onclick="nextSlideEvent()" >
+              <img src="./images/icon-prev.svg" alt="Next Button">
+            </button>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="c-carousel-item-2">
+        <div class="c-carousel-item-2__container">
+          
+          <div class="c-text-slider">
+            <p class="c-text-slider__text"> “ I’ve been interested in coding for a while but never taken the jump, until now.
+              I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”</p>
+            <h1 class="c-text-slider__heading">Tanya Sinclair<span> UX Engineer</span></h1>
+          </div>
 
-  “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
+          <div class="c-text-slider o-hidde">
+            <p class="c-text-slider__text"> “ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”</p>
+            <h1 class="c-text-slider__heading">John Tarkpor<span> Junior Front-end Developer</span></h1>
+          </div>
 
-  John Tarkpor
-  Junior Front-end Developer
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<script src="./global.js"></script>
 </body>
 </html>

@@ -24,3 +24,25 @@ The designs were created to the following widths:
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 300, 500, 700
+
+
+  “ I’ve been interested in coding for a while but never taken the jump, until now. 
+  I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+  excited about the future. ”
+
+  Tanya Sinclair
+  UX Engineer
+
+  “ If you want to lay the best foundation possible I’d recommend taking this course. 
+  The depth the instructors go into is incredible. I now feel so confident about 
+  starting up as a professional developer. ”
+
+  John Tarkpor
+  Junior Front-end Developer
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+:root {
+    /* Primary  */
+    --dark-blue: #202046;
+    --grayish-blue: #babacf;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.o-hidde {
+    display: none;
+}
+
+.c-body {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: Inter, Helvetica, sans-serif;
+}
+
+/* ========== Component Img Carousel ============= */
+
+.c-carousel {
+    max-width: 87.2%;
+}
+
+.c-slider {
+    max-width: 77.98%;
+    margin: 0 auto;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 20px 40px 65px -40px #6c52a7;
+}
+
+.c-carousel-item__container {
+    position: relative;
+}
+
+.c-slider img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.c-carousel__pattern-img {
+    z-index: -1;
+    position: absolute;
+    top: -3rem;
+}
+
+/* ======= c-buttons ========== */
+
+.c-buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 2.2rem;
+}
+
+.c-buttons__btn {
+    border: none;
+    padding: 1.1rem 1.5rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.c-buttons__btn:hover {
+    background-color: #f8f8f8;
+}
+
+.c-buttons__btn-previus {
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.c-buttons__btn-next {
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.c-buttons__btn-next img {
+    transform: rotate(180deg);
+}
+
+/* ======= c-text-slider ========= */
+
+.c-text-slider {
+    padding: 0 1.2rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.c-text-slider__text {
+    font-size: 1.8rem;
+}
+
+.c-text-slider__heading {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+}
+
+.c-text-slider__heading span{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--grayish-blue);
+}
