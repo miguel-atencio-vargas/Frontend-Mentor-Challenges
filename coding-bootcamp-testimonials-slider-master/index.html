@@ -15,23 +15,29 @@
       <div class="c-carousel-item">
         <div class="c-carousel-item__container">
             
-          <div class="c-slider" data-position=0> 
-            <img class="c-slider__img" src="./images/image-tanya.jpg" alt="Tanya Picture"> 
-            <img class="c-slider__img-2 o-hidde" src="./images/image-john.jpg" alt="Jhon Picture">
+          <div class="c-slider"> 
+            
+            <div class="c-slider__container" data-position="0">
+              <img class="c-slider__img" src="./images/image-tanya.jpg" alt="Tanya Picture">
+              <img class="c-slider__img-2 o-hidde" src="./images/image-john.jpg" alt="Jhon Picture">
+            </div>
+
+            <div class="c-buttons">
+
+              <div class="c-buttons__container">
+                <button class="c-buttons__btn c-buttons__btn-previus" onclick="previusSlideEvent()">
+                  <img src="./images/icon-prev.svg" alt="Previus Button">
+                </button>
+                <button class="c-buttons__btn c-buttons__btn-next" onclick="nextSlideEvent()">
+                  <img src="./images/icon-prev.svg" alt="Next Button">
+                </button>
+              </div>
+
+            </div>
           </div>
 
           <img class="c-carousel__pattern-img"src="./images/pattern-bg.svg" alt="">
 
-          <div class="c-buttons">
-            <button class="c-buttons__btn c-buttons__btn-previus" onclick="previusSlideEvent()">
-              <img src="./images/icon-prev.svg" alt="Previus Button">
-            </button>
-            
-            <button class="c-buttons__btn c-buttons__btn-next" onclick="nextSlideEvent()" >
-              <img src="./images/icon-prev.svg" alt="Next Button">
-            </button>
-          </div>
-          
         </div>
       </div>
       

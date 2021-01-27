@@ -1,12 +1,12 @@
 const viewHeight = document.documentElement.clientHeight;
 const padding = (8.09 * viewHeight) / 100;
 if(padding > 0){
-    document.querySelector('.c-body').style['padding-top'] = padding + 'px';
+    document.querySelector('.c-body').style['padding'] = `${padding}px 0 ${padding-10}px`;
 }
 
 
 function nextSlideEvent() {
-    const { dataset, children } = document.querySelector('.c-slider');
+    const { dataset, children } = document.querySelector('.c-slider__container');
     const slideText = document.querySelector('.c-carousel-item-2__container');
 
     const currentIndex = Number(dataset.position);
@@ -26,7 +26,7 @@ function nextSlideEvent() {
 }
 
 function previusSlideEvent() {
-    const { dataset, children } = document.querySelector('.c-slider');
+    const { dataset, children } = document.querySelector('.c-slider__container');
     const slideText = document.querySelector('.c-carousel-item-2__container');
 
     const currentIndex = Number(dataset.position);
