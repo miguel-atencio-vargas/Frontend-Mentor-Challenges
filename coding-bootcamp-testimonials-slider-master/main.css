@@ -23,7 +23,7 @@ html {
     background: url('./images/pattern-curve.svg');
     background-repeat: no-repeat;
     background-size: 85%;
-    background-position-y: bottom -2vh;
+    background-position-y: 100%;
 }
 
 /* ========== Component Img Carousel ============= */
@@ -131,7 +131,6 @@ html {
 @media only screen and (min-width: 769px) {
     .c-body {
         background-size: 50%;
-        background-position-y: bottom -5vh;
     }
     .c-carousel {
         /* Ancho maximo para desktop */
