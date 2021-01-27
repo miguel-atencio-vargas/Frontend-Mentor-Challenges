@@ -170,7 +170,7 @@ html {
         left: 22px;
     }
     .c-buttons__btn {
-        padding: .8rem .9rem;
+        padding: 1.4rem 1.5rem;
     }
     .c-buttons__btn img {
         width: 8px;
@@ -180,5 +180,8 @@ html {
 @media only screen and (min-width: 1199px) {
     .c-carousel-item-2__container {
         right: -100px;
+    }
+    .c-text-slider__text{
+        font-size: 3rem;
     }
 }
