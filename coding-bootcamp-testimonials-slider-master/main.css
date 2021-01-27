@@ -9,10 +9,6 @@ html {
     font-size: 62.5%;
 }
 
-.o-hidde {
-    display: none;
-}
-
 .c-body {
     display: flex;
     justify-content: center;
@@ -39,7 +35,6 @@ html {
 }
 
 .c-slider__container {
-    border-radius: 3px;
     overflow: hidden;
     box-shadow: 20px 40px 65px -40px #6c52a7;
 }
@@ -51,6 +46,10 @@ html {
 .c-slider img {
     min-width: 100%;
     min-height: 100%;
+    border-radius: 3px;
+    animation-name: 'slide-animation';
+    animation-duration: .4s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .c-carousel__pattern-img {
@@ -106,6 +105,9 @@ html {
     padding: 0 1.2rem;
     text-align: center;
     color: var(--dark-blue);
+    animation-name: 'slide-animation-2';
+    animation-duration: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .c-text-slider__text {
@@ -120,6 +122,10 @@ html {
 .c-text-slider__heading {
     font-size: 1.6rem;
     line-height: 2.1rem;
+}
+
+.o-hidde {
+    display: none;
 }
 
 .c-text-slider__heading span {
@@ -175,13 +181,37 @@ html {
     .c-buttons__btn img {
         width: 8px;
     }
+    .c-text-slider__heading {
+        font-size: 1.9rem;
+    }
+    .c-text-slider__heading span{
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 1199px) {
     .c-carousel-item-2__container {
         right: -100px;
     }
-    .c-text-slider__text{
+    .c-text-slider__text {
         font-size: 3rem;
+    }
+}
+
+@keyframes slide-animation {
+    from {
+        transform: translateX(8px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-animation-2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

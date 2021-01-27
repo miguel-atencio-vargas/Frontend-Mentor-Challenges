@@ -19,6 +19,7 @@ function nextSlideEvent() {
 
     items[currentIndex].classList.add('o-hidde');
     items[nextSlide].classList.remove('o-hidde');
+    
     itemsText[currentIndex].classList.add('o-hidde');
     itemsText[nextSlide].classList.remove('o-hidde');
 
@@ -39,6 +40,7 @@ function previusSlideEvent() {
 
     items[currentIndex].classList.add('o-hidde');
     items[previusSlide].classList.remove('o-hidde');
+    
     itemsText[currentIndex].classList.add('o-hidde');
     itemsText[previusSlide].classList.remove('o-hidde');
 
