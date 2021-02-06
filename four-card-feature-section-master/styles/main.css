@@ -32,6 +32,8 @@
 }
 
 .c-header p {
+    max-width: 514px;
+    margin: 0 auto;
     font-size: 15px;
     color: var(--grayish-blue);
 }
