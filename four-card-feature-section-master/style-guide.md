@@ -32,3 +32,23 @@ The designs were created to the following widths:
 
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 200, 400, 600
+
+### Content
+
+  Reliable, efficient delivery
+  Powered by Technology
+
+  Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful
+
+  Supervisor
+  Monitors activity to identify project roadblocks
+
+  Team Builder
+  Scans our talent network to create the optimal team for your project
+
+  Karma
+  Regularly evaluates our talent to ensure quality
+
+  Calculator
+  Uses data from past projects to provide better delivery estimates
