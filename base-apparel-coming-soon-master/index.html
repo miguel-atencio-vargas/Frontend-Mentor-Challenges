@@ -8,7 +8,38 @@
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="c-body">
+  <div class="c-body__container">
+    
+    <header class="c-header">
+      <div class="c-header__container">
+        <img src="./images/logo.svg" alt="logo-brand">
+      </div>
+    </header>
+    
+    <div class="c-wallpaper">
+      <div class="c-wallpaper__container"></div>
+    </div>
+    
+    <article class="c-article">
+      <div class="c-article__container">
+        <h1 class="heading"><span class="heading--rose">We're</span> <span>coming</span>soon</h1>
+        <p class="text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+          up-to-date with announcements and our launch deals.</p>
+        
+        <form class="c-email" action="">
+          <div class="c-email__container">
+            <input class="c-email__input" type="email" required placeholder="Email Address">
+            <img class="c-email__error-img o-hidde" src="./images/icon-error.svg" alt="icon-error">
+            <button class="c-email__button"><img src="./images/icon-arrow.svg" alt="icon-to-send"></button>
+          </div>
+          <p class="c-email__error-message o-hidde">Please provide a valid email</p>
+          <p class="c-email__error-message c-email__success-message o-hidde">Email recived. Have a good day!</p>
+        </form>
+      </div>
+    </article>
 
+  </div>
+  <script src="./global.js"></script>
 </body>
 </html>
