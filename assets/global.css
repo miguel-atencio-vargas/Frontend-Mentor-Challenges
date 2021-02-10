@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 :root {
     --live-green: hsl(143, 71%, 48%);
     --live-red: hsl(0, 100%, 67%);
@@ -7,7 +8,7 @@
     --semi-desaturated-black: hsl(249, 22%, 12%);
     --white: hsl(0, 0%, 100%);
     --border-triangle: 15px;
-    --line-height-triangle: 27px;
+    --line-height-triangle: 28px;
 }
 
 .c-body__container {
@@ -15,6 +16,10 @@
     padding: calc(0.0375*100vh) 16px calc(0.115*100vh);
     font-family: 'Nunito', Courier, monospace;
     font-size: 2rem;
+}
+
+.c-terminal {
+    max-width: 525px;
 }
 
 .c-terminal__head {
@@ -37,49 +42,62 @@
     margin-right: 5px;
 }
 
+.c-terminal__circle:hover {
+    background-image: url('./images/close.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .c-terminal__circle-2 {
     background-color: #AC8FCC;
+}
+
+.c-terminal__circle-2:hover {
+    background-image: url('./images/maximaze.png');
 }
 
 .c-terminal__circle-3 {
     background-color: #7ACDC2;
 }
 
+.c-terminal__circle-3:hover {
+    background-image: url('./images/minimaze.png');
+}
+
 .c-terminal__body {
+    padding: 10px 7px;
     border: 1px solid var(--desaturated-black);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 10px 0;
 }
 
 .c-command {
     display: flex;
-    margin: 10px 7px;
+    margin: 5px 0;
 }
 
 .c-command__user {
+    max-height: 30px;
     color: var(--white);
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     background-color: var(--semi-desaturated-black);
-}
-
-.c-command__user p {
-    font-size: 1.5rem;
     padding-left: 5px;
     line-height: var(--line-height-triangle);
+    font-size: 2rem;
+    font-family: 'Ubuntu Mono';
 }
 
 .c-command__triangle {
     width: 0;
     height: 0;
     border-left: var(--border-triangle) solid var(--semi-desaturated-black);
-    border-right: var(--border-triangle) solid var(--live-red);
     border-bottom: var(--border-triangle) solid var(--live-red);
     border-top: var(--border-triangle) solid var(--live-red);
 }
 
 .c-command__icon {
+    max-height: 30px;
     line-height: var(--line-height-triangle);
     font-size: 2.4rem;
     font-weight: 600;
@@ -89,7 +107,73 @@
 
 .c-command__triangle-2 {
     border-left: var(--border-triangle) solid var(--live-red);
-    border-right: var(--border-triangle) solid transparent;
+    border-right: 4px solid transparent;
     border-top: var(--border-triangle) solid transparent;
     border-bottom: var(--border-triangle) solid transparent;
+}
+
+.c-command__content {
+    font-family: 'Ubuntu Mono';
+    font-size: 1.8rem;
+}
+
+/* ======  Styles of carousel & cards   ========== */
+
+.c-carousel {
+    max-width: 525px;
+    margin-top: 15px;
+}
+
+.c-carousel__container {}
+
+.c-card {
+    box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.c-card__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+
+.c-card-item {
+    width: calc(0.54*100%);
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 2px dashed #958E9D;
+    box-shadow: inset 2px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.c-card-item-2 {
+    width: calc(0.41*100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-card-heading {
+    font-size: 1.7rem;
+    line-height: 16.8px;
+    text-align: center;
+}
+
+.c-card-tags {
+    font-family: 'Barlow';
+    font-weight: 500;
+}
+
+.html {
+    color: #FF5858;
+}
+
+.css {
+    color: #3C99DC;
+}
+
+.js {
+    color: #F0DB4F;
 }
