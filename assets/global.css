@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 :root {
-    --live-green: hsl(143, 71%, 48%);
-    --live-red: hsl(0, 100%, 67%);
+    --live-color: hsl(143, 71%, 48%);
+    --live-color: hsl(0, 100%, 67%);
     --desaturated-black: hsl(0, 0%, 38%);
     --semi-desaturated-black: hsl(249, 22%, 12%);
     --white: hsl(0, 0%, 100%);
     --border-triangle: 15px;
     --line-height-triangle: 28px;
+}
+
+.o-hidde {
+    visibility: hidden;
 }
 
 .c-body__container {
@@ -38,7 +42,7 @@
     height: 14px;
     width: 14px;
     border-radius: 50px;
-    background-color: var(--live-red);
+    background-color: var(--live-color);
     margin-right: 5px;
 }
 
@@ -92,8 +96,8 @@
     width: 0;
     height: 0;
     border-left: var(--border-triangle) solid var(--semi-desaturated-black);
-    border-bottom: var(--border-triangle) solid var(--live-red);
-    border-top: var(--border-triangle) solid var(--live-red);
+    border-bottom: var(--border-triangle) solid var(--live-color);
+    border-top: var(--border-triangle) solid var(--live-color);
 }
 
 .c-command__icon {
@@ -102,11 +106,11 @@
     font-size: 2.4rem;
     font-weight: 600;
     padding: 0 5px;
-    background-color: var(--live-red);
+    background-color: var(--live-color);
 }
 
 .c-command__triangle-2 {
-    border-left: var(--border-triangle) solid var(--live-red);
+    border-left: var(--border-triangle) solid var(--live-color);
     border-right: 4px solid transparent;
     border-top: var(--border-triangle) solid transparent;
     border-bottom: var(--border-triangle) solid transparent;
@@ -119,41 +123,77 @@
 
 /* ======  Styles of carousel & cards   ========== */
 
-.c-carousel {
+ul.c-carousel {
     max-width: 525px;
     margin-top: 15px;
+    height: 110vh;
+    overflow-y: scroll;
 }
-
-.c-carousel__container {}
 
 .c-card {
     box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .c-card__container {
     padding: 5px 8px;
 }
 
+/* ========= Items ========== */
+
 .c-card-item {
-    display: flex;
-    border-radius: 6px;
+    position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+    margin-bottom: 22px;
 }
 
-.c-card-item img {
-    width: 70%;
-    border-radius: 6px;
+.c-card-item__img {
+    position: absolute;
+    z-index: -1;
+}
+
+.c-card-item__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: var(--live-color);
+    margin: 5px 0;
+}
+
+.c-button span {
+    line-height: 0;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.c-button img {
+    width: 23px;
 }
 
 .c-card-heading {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
     line-height: 16.8px;
     text-align: center;
+    margin-bottom: 5px;
 }
 
-.c-card-heading span {
+.c-card-tags span {
     font-family: 'Barlow';
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -170,29 +210,8 @@
 }
 
 .c-card-item-2 {
-    width: calc(0.41*100%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.c-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 4px 8px;
-    border-radius: 20px;
-    text-decoration: none;
-    background-color: var(--live-green);
-}
-
-.c-button span {
-    line-height: 0;
-    font-weight: 700;
-    color: var(--white);
-    padding-right: 5px;
-}
-
-.c-button img {
-    width: 23px;
 }
