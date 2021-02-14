@@ -12,8 +12,14 @@
 }
 
 .o-hidde {
+    opacity: 0;
     visibility: hidden;
 }
+
+.o-blur {
+    filter: opacity(62.1%) blur(3px);
+}
+
 
 .c-body__container {
     height: 100vh;
@@ -23,6 +29,7 @@
 }
 
 .c-terminal {
+    margin: 0 auto;
     max-width: 525px;
 }
 
@@ -125,9 +132,9 @@
 
 ul.c-carousel {
     max-width: 525px;
-    margin-top: 15px;
-    height: 110vh;
-    overflow-y: scroll;
+    margin: 15px auto 0;
+    /* height: 110vh;
+    overflow-y: scroll; */
 }
 
 .c-card {
@@ -156,12 +163,14 @@ ul.c-carousel {
 .c-card-item__img {
     position: absolute;
     z-index: -1;
+    transition: filter .3s ease-in-out;
 }
 
 .c-card-item__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
 }
 
 .c-button {
@@ -182,6 +191,7 @@ ul.c-carousel {
 
 .c-button img {
     width: 23px;
+    padding-left: 3px;
 }
 
 .c-card-heading {
@@ -214,4 +224,24 @@ ul.c-carousel {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 769px) {
+    .c-body__container {
+        display: flex;
+        justify-content: center;
+    }
+    .c-terminal {
+        margin: 0;
+        padding-right: 10px;
+        align-self: center;
+    }
+    ul.c-carousel {
+        margin: 0;
+        flex-basis: 50%;
+        padding-left: 10px;
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
 }
