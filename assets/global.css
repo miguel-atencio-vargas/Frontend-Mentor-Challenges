@@ -20,7 +20,6 @@
     filter: opacity(62.1%) blur(3px);
 }
 
-
 .c-body__container {
     height: 100vh;
     padding: calc(0.0375*100vh) 16px calc(0.115*100vh);
@@ -31,6 +30,11 @@
 .c-terminal {
     margin: 0 auto;
     max-width: 525px;
+}
+
+.c-terminal__container {
+    box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
 
 .c-terminal__head {
@@ -133,8 +137,9 @@
 ul.c-carousel {
     max-width: 525px;
     margin: 15px auto 0;
-    /* height: 110vh;
-    overflow-y: scroll; */
+    display: flex;
+    flex-direction: column-reverse;
+    transition: opacity .3s ease-in-out;
 }
 
 .c-card {
@@ -233,6 +238,7 @@ ul.c-carousel {
         justify-content: center;
     }
     .c-terminal {
+        width: 525px;
         margin: 0;
         padding-right: 10px;
         align-self: center;
