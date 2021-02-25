@@ -33,7 +33,6 @@
 }
 
 .c-terminal__container {
-    box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
 
@@ -137,20 +136,15 @@
 ul.c-carousel {
     max-width: 525px;
     margin: 15px auto 0;
-    display: flex;
-    flex-direction: column-reverse;
     transition: opacity .3s ease-in-out;
 }
 
 .c-card {
-    box-shadow: 12px 4px 24px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
     position: relative;
     margin-bottom: 10px;
-}
-
-.c-card__container {
-    padding: 5px 8px;
+    overflow: hidden;
+    border-radius: 7px;
+    border: 1px solid var(--desaturated-black);
 }
 
 /* ========= Items ========== */
@@ -167,15 +161,19 @@ ul.c-carousel {
 
 .c-card-item__img {
     position: absolute;
-    z-index: -1;
-    transition: filter .3s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.c-card-item__img:hover {
+    transform: scale(1.05) translateY(-5px);
 }
 
 .c-card-item__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    z-index: 1;
+    transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
 }
 
 .c-button {
@@ -230,24 +228,27 @@ ul.c-carousel {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
+    padding: 5px 8px;
 }
 
 @media only screen and (min-width: 769px) {
     .c-body__container {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .c-terminal {
         width: 525px;
         margin: 0;
         padding-right: 10px;
-        align-self: center;
     }
     ul.c-carousel {
         margin: 0;
-        flex-basis: 50%;
         padding-left: 10px;
-        max-height: 100vh;
         overflow-y: scroll;
+        max-height: 55vh;
+    }
+    .c-card {
+        cursor: pointer;
     }
 }
