@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --rose: hsl(320, 100%, 66%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', 'Lucida Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.c-body {
+    background-color: var(--violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+
+.c-body__container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.c-header {
+    margin-bottom: 10%;
+}
+
+.c-header__img {
+    width: 41%;
+}
+
+.c-hero__item {
+    margin-bottom: 10%;
+}
+
+.c-hero__title {
+    font-size: 2rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin-bottom: 6%;
+}
+
+.c-hero__text {
+    font-size: 1.5rem;
+    margin-bottom: 6%;
+}
+
+.c-hero__button {
+    min-width: 53.3%;
+    font-size: 1.5rem;
+    padding: .5em;
+    margin-bottom: 7.8%;
+    border: 0;
+    border-radius: 50px;
+    background-color: #fff;
+    color: var(--violet);
+    font-family: 'Poppins';
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.38);
+    transition: background-color .3s ease-in-out;
+}
+
+.c-hero__button:hover {
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+.c-footer>* {
+    font-size: 1.6rem;
+    border: 1px solid #fff;
+    padding: .5em;
+    margin-right: 2rem;
+    border-radius: 50px;
+    line-height: 35px;
+    cursor: pointer;
+    transition: color, border-color .2s ;
+}
+
+.c-footer>*:nth-last-child(1) {
+    margin: 0;
+}
+
+.c-footer>*:hover {
+    color: var(--rose);
+    border-color: var(--rose);
+}
+
+@media only screen and (min-width: 769px) {
+    .c-body {
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    .c-body__container {
+        max-width: 87%;
+    }
+    .c-header {
+        margin-bottom: 9%;
+    }
+    .c-header__img {
+        width: 20%;
+    }
+    .c-hero {
+        display: flex;
+        justify-content: space-around;
+    }
+    .c-hero__item {
+        width: 50%;
+        margin: 0 2rem 0 0;
+    }
+    .c-hero__item-2 {
+        width: 50%;
+        margin-left: 2rem;
+        text-align: left;
+    }
+    .c-hero__img {
+        object-fit: contain;
+        height: 100%;
+    }
+    .c-hero__title {
+        font-size: 4rem;
+    }
+    .c-hero__text {
+        font-size: 1.9rem;
+    }
+    .c-hero__button {
+        font-size: 2.2rem;
+    }
+    .c-footer {
+        text-align: right;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .c-body__container {
+        padding: 0;
+    }
+}
